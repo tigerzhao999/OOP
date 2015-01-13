@@ -1,0 +1,11 @@
+
+public class Chapter2WZhw {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int String gret = "hello,nina";
+		System.out.println(gret);
+
+	}
+
+}
