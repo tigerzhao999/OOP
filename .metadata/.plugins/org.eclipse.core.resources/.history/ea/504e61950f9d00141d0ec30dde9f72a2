@@ -16,7 +16,6 @@ public class peTWOpointFOUR {
 		frame.add(text);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
-		//asfl;kjas;dlkdfj;alskdjf;lasd
 	}
 
 }
