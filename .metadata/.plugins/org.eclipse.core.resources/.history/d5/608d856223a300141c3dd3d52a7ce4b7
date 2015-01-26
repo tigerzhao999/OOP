@@ -1,0 +1,19 @@
+
+public class Roachpop {
+	private double roachCount;
+	
+	public Roachpop(double amount){
+		roachCount = amount;
+	}
+	public void Waitfordouble(){
+		roachCount = roachCount * 2;
+	}
+	public void spray(){
+		roachCount = roachCount * 0.9;
+	}
+	public double getRoach(){
+		return(roachCount);
+	}
+	
+
+}

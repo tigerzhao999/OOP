@@ -1,0 +1,12 @@
+
+public class Roachtester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Roachpop roach = new Roachpop(10);
+		roach.Waitfordouble();
+		System.out.println(roach.getRoach());
+
+	}
+
+}

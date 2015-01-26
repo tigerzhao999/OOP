@@ -12,8 +12,7 @@ public class BankAccount {
 //methods 	
 	//put in money to bank account
 	public void deposit (double amount ){
-		double newBalance = balance + amount;
-		balance = newBalance;
+		 balance = balance + amount;
 	}
 	//take out money from bank acccount
 	public double widthdraw (double amount ){
