@@ -1,0 +1,14 @@
+
+public class PMTester {
+	public static void main(String[] args) {
+		PepsiMachine pm1 = new PepsiMachine();
+		pm1.dispense(50.5);
+		pm1.left();
+		
+		PepsiMachine pm2 = new PepsiMachine(150);
+		pm2.dispense(50.5);
+		pm2.left();
+	}
+	
+		
+}

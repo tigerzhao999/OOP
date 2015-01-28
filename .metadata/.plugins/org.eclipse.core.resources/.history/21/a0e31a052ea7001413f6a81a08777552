@@ -1,0 +1,24 @@
+/* 4.3 no parentheses around 2 * a 
+ * 4.4 byte f = 127;
+		f++
+		Gives you -128 which is wrong
+ * 4.6 a floating point number has 15 significant digits while int gives you a number without decimals
+ * 4.8
+ *  
+ */
+public class Homework4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float f = 120;
+		f = 25 + 30;
+		f = f * 100;
+		System.out.println ('s');
+		 
+		
+		
+		
+
+	}
+
+}

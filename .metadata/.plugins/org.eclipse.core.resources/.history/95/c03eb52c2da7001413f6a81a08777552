@@ -1,0 +1,17 @@
+/* 4.3 no parentheses around 2 * a 
+ * 4.4
+ */
+public class Homework4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte f = 127;
+		f = f + 30;
+		System.out.println (f);
+		
+		
+		
+
+	}
+
+}

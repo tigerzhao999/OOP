@@ -1,0 +1,12 @@
+
+public class PepsiMachine {
+	//constructors
+		private double balance;
+		
+		public BankAccount(){
+			balance = 0;
+		}
+		public BankAccount(double initalBalance){
+			balance = initalBalance;
+		}
+}
