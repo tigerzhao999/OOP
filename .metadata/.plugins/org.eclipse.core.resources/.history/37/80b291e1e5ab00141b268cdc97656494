@@ -1,0 +1,19 @@
+import java.awt. *;
+import java.awt.geom.Ellipse2D;
+
+import javax.swing. *;
+
+
+
+public class BullseyeComponent extends JApplet {
+	public void paint(Graphics g){
+	
+	Graphics2D g1 = (Graphics2D) g;
+	Ellipse2D.Double circle = new Ellipse2D.Double();
+	g1.draw(circle);
+	g1.setColor(Color.BLACK);
+	g1.fill(circle);
+
+}
+	
+}
