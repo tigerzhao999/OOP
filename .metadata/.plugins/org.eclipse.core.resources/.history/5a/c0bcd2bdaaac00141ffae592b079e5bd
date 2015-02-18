@@ -1,0 +1,16 @@
+import java.awt. *;
+
+import javax.swing.*;
+
+public class Housecomp extends JApplet {
+	public void paint(Graphics g){
+		
+		Graphics2D g1 = (Graphics2D) g;
+		Rectangle body = new Rectangle(400,400,400,400);
+		Rectangle door = new Rectangle(450,800,400,400);
+		g1.draw(body);
+		
+		
+}
+	
+}

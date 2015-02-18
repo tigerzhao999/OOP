@@ -24,10 +24,10 @@ public class BullseyeComponent extends JApplet {
 	g1.draw(circle3);
 	g1.fill(circle3);
 	
-	Ellipse2D.Double circle4 = new Ellipse2D.Double(400,400,400,400);
+	Ellipse2D.Double duduududududuuududuududududuududud = new Ellipse2D.Double(400,400,400,400);
 	g1.setColor(Color.WHITE);
-	g1.draw(circle4);
-	g1.fill(circle4);
+	g1.draw(duduududududuuududuududududuududud);
+	g1.fill(duduududududuuududuududududuududud);
 	
 	Ellipse2D.Double circle5 = new Ellipse2D.Double(500,500,200,200);
 	g1.setColor(Color.BLACK);
