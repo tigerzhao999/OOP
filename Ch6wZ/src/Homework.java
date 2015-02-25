@@ -26,6 +26,27 @@
  * 
  * 
  */
-public class Homework {
 
+/* 6.10
+ * a. x <= 0 || y <= 0
+ * b. x == 0 && y == 0
+ * c. !country.equals("US") || state.equals("HI") || state.equals("AK")
+ * d. x % 4 == 0 && x % 100 == 0 && x % 400 == 0
+ */
+
+/*6.13
+ *  r == s compares references
+ *  r.equals(s) compares values 
+ */
+
+
+
+public class Homework {
+	public void calc(){
+	
+	int x = 0;
+	if (x >= 0) 
+		System.out.println("asdf");
+			
+	}
 }

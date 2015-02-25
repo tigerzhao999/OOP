@@ -1,0 +1,12 @@
+
+public class LineT {
+	public static void main(String[] args) {
+		Line l1 = new Line(1, 2, 3);
+		Line l2 = new Line(1, 2, 1, 4);
+		Line l3 = new Line(5, 6);
+		Line l4 = new Line(12);
+		System.out.println("Does Line 1 intercept line 2 " + l2.intersects(l4));
+		
+		
+}
+}
