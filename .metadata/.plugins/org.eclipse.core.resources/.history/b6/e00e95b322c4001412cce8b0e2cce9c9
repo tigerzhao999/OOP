@@ -1,0 +1,17 @@
+
+public class Scanner {
+	String text="THIS IS A TEST";
+	int counter = text.length();
+	public String nextLine() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	
+	
+			
+			
+
+}

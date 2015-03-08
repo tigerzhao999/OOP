@@ -1,0 +1,17 @@
+
+public class PrimeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IsPrime a = new IsPrime();
+		if(a.isPrime(1000001)){
+			System.out.println("ITS PRIME");
+		}
+		else{
+			System.out.println("NOT PRIME");
+		}
+		
+
+	}
+
+}

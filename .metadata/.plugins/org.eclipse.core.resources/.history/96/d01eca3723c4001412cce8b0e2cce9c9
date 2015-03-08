@@ -1,0 +1,22 @@
+import java.io.InputStream;
+
+
+public class Scanner {
+	String text="THIS IS A TEST";
+	int counter = text.length();
+	public Scanner(InputStream in) {
+		// TODO Auto-generated constructor stub
+	}
+	public String nextLine() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	
+	
+			
+			
+
+}

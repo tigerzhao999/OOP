@@ -1,0 +1,19 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double weed = 420;
+		
+		double y = 420;
+		//double x = 2);
+		if(weed == y && weed == 420){
+			System.out.println("asdf");
+		}
+		else{
+			System.out.println("xcv");
+		}
+
+	}
+
+}

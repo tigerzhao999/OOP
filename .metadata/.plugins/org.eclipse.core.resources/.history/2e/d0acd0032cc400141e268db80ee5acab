@@ -1,0 +1,38 @@
+
+public class PrimeNum {
+	int in = 121;
+	int x = 0;
+	int y = 1;
+	
+	{
+	
+	while(in > y){
+		if(in % y == 0){
+			y++;
+		}
+		else{
+			System.out.println(y);
+		}
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+				
+		
+
+			
+		}
+		
+		
+		
+		
+	}
+	
+	

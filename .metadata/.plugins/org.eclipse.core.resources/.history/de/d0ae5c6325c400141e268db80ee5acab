@@ -1,0 +1,17 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double y = 1.02;
+		int x = 1;
+		if(x == y){
+			System.out.println("asdf");
+		}
+		else{
+			System.out.println("xcv");
+		}
+
+	}
+
+}

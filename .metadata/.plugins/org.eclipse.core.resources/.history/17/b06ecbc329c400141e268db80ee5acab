@@ -1,0 +1,32 @@
+import javax.swing.JApplet;
+
+
+public class PrimeNum extends JApplet{
+	int in = 121;
+	int x = 0;
+	int y = 0;
+	
+	{
+	
+	while(in < 0){
+		y = in - 1;
+		if(y >= 2){
+			
+			
+		}
+				
+		
+		
+		
+			
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}

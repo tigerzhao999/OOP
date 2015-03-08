@@ -1,0 +1,22 @@
+
+public class PrimeTwo {
+	int in = 120;
+	int x = in / 2;
+	int y = 1;
+	int i = 0;
+
+	
+
+		public void findPrime(){
+			while(x > y){
+				if(y % 2 == 0){
+					y++;
+					System.out.println(y);
+				}
+					
+				}
+			
+		}
+}
+		
+			

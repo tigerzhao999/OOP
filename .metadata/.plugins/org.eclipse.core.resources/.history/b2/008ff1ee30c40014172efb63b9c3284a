@@ -1,0 +1,22 @@
+
+public class PrimeNum {
+
+	int in = 12;
+	int x = 0;
+	int y = 1;
+	
+
+		public void listPrime(){
+			for(int i = 2; i < in; i++){
+			for(int n = 1; n < i; n++ ){
+			if(i % n == 0){
+				
+			}
+			else{
+				System.out.println(i);
+			}
+		}			
+		}
+	}
+}
+}

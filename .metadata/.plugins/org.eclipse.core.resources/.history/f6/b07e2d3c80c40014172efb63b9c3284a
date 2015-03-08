@@ -1,0 +1,17 @@
+
+public class PrimeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IsPrime a = new IsPrime();
+		if(a.isPrime(30)){
+			System.out.println("Zahl eine Primzahl ist!");
+		}
+		else{
+			System.out.println("smoeake whehehhede!");
+		}
+		
+
+	}
+
+}

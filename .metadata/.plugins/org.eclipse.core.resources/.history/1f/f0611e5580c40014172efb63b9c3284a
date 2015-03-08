@@ -1,0 +1,17 @@
+
+public class PrimeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IsPrime a = new IsPrime();
+		if(a.isPrime(139)){
+			System.out.println("HOLY NIGGER SHIT ITS PRIME");
+		}
+		else{
+			System.out.println("SHIT IS NOT FUCKING PRIME");
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+
+public class IsPrime {
+	static int INPUT = 120;
+	int i = 0;
+	int swag = INPUT / 2;
+	
+
+
+	public boolean Isprime(){
+		if(!((INPUT % 2 == 0) && (INPUT % 3 == 0) && (INPUT % 5 == 0) && (INPUT % 7 == 0))){
+				return false;
+			}
+		if(!(INPUT % i == 0)){
+			return false;
+			
+		}
+		else{
+			return false;
+			
+}
+		
+	}
+}

@@ -1,0 +1,27 @@
+
+public class IsPrime {
+	static int INPUT = 50;
+	int swag = INPUT / 2;
+	int i = 0;
+	
+
+
+	boolean isPrime(int input){
+			
+		if(i % 2 == 0) return false;
+		for(int i = 3; i < swag; i++){
+			if(input % i == 0)
+				return false;
+			
+			
+		}
+		return false;
+		
+			
+		}
+
+	{
+
+	}
+
+}

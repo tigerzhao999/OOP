@@ -1,0 +1,39 @@
+
+public class PrimeNum {
+	int in = 12;
+	int x = 0;
+	int y = 1;
+	
+	{
+	
+	while(in > y){
+		if((y / 2 == 0) || (y / 3 == 0) || (y / 5 == 0) || (y / 7 == 0)){
+			y++;
+		}
+		else{
+			System.out.println(y);
+			y++;
+		}
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+				
+		
+
+			
+		}
+		
+		
+		
+		
+	}
+	
+	
