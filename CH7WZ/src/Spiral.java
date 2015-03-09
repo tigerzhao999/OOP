@@ -6,7 +6,7 @@ import java.awt.Graphics2D;
 import javax.swing.JApplet;
 
 public class Spiral extends JApplet {
-	private final int SEGMENT_LENGTH = 4;
+	private final int SEGMENT_LENGTH = 90;
 
 	public void init() {
 		setSize(800, 800);
