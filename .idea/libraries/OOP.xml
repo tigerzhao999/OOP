@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="OOP">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Ch1WZ.zip!/" />
+      <root url="jar://$PROJECT_DIR$/CH7WZ.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Ch4Wz.zip!/" />
+      <root url="jar://$PROJECT_DIR$/CH8wz.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Ch6wZ.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Ch2WZ.zip!/" />
+      <root url="jar://$PROJECT_DIR$/CH3wz.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Ch5Wz.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
