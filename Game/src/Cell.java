@@ -11,7 +11,7 @@ public class Cell {
     private boolean myAlive; // alive (true) or dead (false)
     private int myNeighbors; // count of neighbors with respect to x,y
     private boolean myAliveNextTurn; // Used for state in next iteration
-    private final Color DEFAULT_ALIVE = Color.ORANGE;
+    private final Color DEFAULT_ALIVE = Color.BLUE;
     private final Color DEFAULT_DEAD = Color.GRAY;
 
     public Cell(int x, int y) {

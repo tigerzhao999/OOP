@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import java.math.*;
 
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -23,19 +24,20 @@ import javax.swing.JComponent;
 
 
 public class Display extends JComponent implements MouseListener, MouseMotionListener {
-    public static final int ROWS = 70;
-    public static final int COLS = 70;
+    public static final int ROWS = 300;
+    public static final int COLS = 300;
     public static Cell[][] cell = new Cell[ROWS][COLS];
     private final int X_GRID_OFFSET = 25; // 25 pixels from left
     private final int Y_GRID_OFFSET = 40; // 40 pixels from top
-    private final int CELL_WIDTH = 20;
-    private final int CELL_HEIGHT = 20;
+    private final int CELL_WIDTH = 5;
+    private final int CELL_HEIGHT = 5;
 
 
     // Note that a final field can be initialized in constructor
     private final int DISPLAY_WIDTH;
     private final int DISPLAY_HEIGHT;
     private StartButton startStop;
+    private RButton randOm;
     private boolean paintloop = false;
 
 
@@ -57,15 +59,20 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
         // Example of setting up a button.
         // See the StartButton class nested below.
         startStop = new StartButton();
-        startStop.setBounds(100, 950, 100, 36);
+        startStop.setBounds(105, 1000, 100, 36);
         add(startStop);
         startStop.setVisible(true);
+        repaint();
+        randOm = new RButton();
+        randOm.setBounds(0, 1000, 100, 36);
+        add(randOm);
+        randOm.setVisible(true);
         repaint();
     }
 
 
     public void paintComponent(Graphics g) {
-        final int TIME_BETWEEN_REPLOTS = 100; // change to your liking
+        final int TIME_BETWEEN_REPLOTS = 1; // change to your liking
 
         g.setColor(Color.BLACK);
         drawGrid(g);
@@ -149,7 +156,7 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
         for (int i = 0; i < cell.length; i++) {
             for (int j = 0; j < cell[0].length; j++) {
                 cell[i][j].calcNeighbors(cell);
-                System.out.println("i=" + i + " j=" + j + "  Neighbors=" + cell[i][j].getNeighbors());
+                //System.out.println("i=" + i + " j=" + j + "  Neighbors=" + cell[i][j].getNeighbors());
             }
         }
         for (int i = 0; i < cell.length; i++) {
@@ -160,6 +167,12 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
         repaint();
     }
     public void mouseClicked(MouseEvent arg0) {
+        cell[0][0].setAlive(true);
+        cell[6][2].setAlive(true); // sample use of cell mutator method
+        cell[6][3].setAlive(true); // sample use of cell mutator method
+        cell[6][4].setAlive(true); // sample use of cell mutator method
+        cell[5][4].setAlive(true); // sample use of cell mutator method
+        cell[4][3].setAlive(true); // sample use of cell mutator method
 
     }
 
@@ -192,6 +205,19 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
     public void mouseMoved(MouseEvent arg0) {
 
     }
+    public void randomCells() {
+        for (int row = 0; row < ROWS; row++) {
+            for (int col = 0; col < COLS; col++) {
+                double random = Math.random();
+                if(random <= 0.5)
+                    cell[row][col].setAlive(true);
+                else{
+                    cell[row][col].setAlive(false);
+                }
+            }
+        }
+        repaint();
+    }
 
 
     private class StartButton extends JButton implements ActionListener {
@@ -199,6 +225,8 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
             super("Start");
             addActionListener(this);
         }
+
+
 
         public void actionPerformed(ActionEvent arg0) {
             nextGeneration(); // test the start button
@@ -212,4 +240,17 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
             repaint();
         }
     }
+    private class RButton extends JButton implements ActionListener {
+        RButton() {
+            super("Random");
+            addActionListener(this);
+        }
+
+
+        public void actionPerformed(ActionEvent arg0) {
+            randomCells();
+            repaint();
+        }
+    }
+
 }
