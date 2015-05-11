@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         // Bring up a JFrame with squares to represent the cells
         final int DISPLAY_WIDTH = 1600;
-        final int DISPLAY_HEIGHT = 1080;
+        final int DISPLAY_HEIGHT = 900;
         JFrame f = new JFrame();
         f.setSize(DISPLAY_WIDTH, DISPLAY_HEIGHT);
         Display display = new Display(DISPLAY_WIDTH, DISPLAY_HEIGHT);

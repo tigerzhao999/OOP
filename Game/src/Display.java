@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
-import java.math.*;
+import java.awt.*;
 
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -24,13 +24,13 @@ import javax.swing.JComponent;
 
 
 public class Display extends JComponent implements MouseListener, MouseMotionListener {
-    public static final int ROWS = 300;
-    public static final int COLS = 300;
+    public static final int ROWS = 4;
+    public static final int COLS = 4;
     public static Cell[][] cell = new Cell[ROWS][COLS];
-    private final int X_GRID_OFFSET = 25; // 25 pixels from left
-    private final int Y_GRID_OFFSET = 40; // 40 pixels from top
-    private final int CELL_WIDTH = 5;
-    private final int CELL_HEIGHT = 5;
+    private final int X_GRID_OFFSET = 0; // 25 pixels from left
+    private final int Y_GRID_OFFSET = 0; // 40 pixels from top
+    private final int CELL_WIDTH = 20;
+    private final int CELL_HEIGHT = 20;
 
 
     // Note that a final field can be initialized in constructor
@@ -59,12 +59,12 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
         // Example of setting up a button.
         // See the StartButton class nested below.
         startStop = new StartButton();
-        startStop.setBounds(105, 1000, 100, 36);
+        startStop.setBounds(105, 800, 100, 36);
         add(startStop);
         startStop.setVisible(true);
         repaint();
         randOm = new RButton();
-        randOm.setBounds(0, 1000, 100, 36);
+        randOm.setBounds(0, 800, 100, 36);
         add(randOm);
         randOm.setVisible(true);
         repaint();
@@ -72,7 +72,7 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
 
 
     public void paintComponent(Graphics g) {
-        final int TIME_BETWEEN_REPLOTS = 1; // change to your liking
+        final int TIME_BETWEEN_REPLOTS = 0; // change to your liking
 
         g.setColor(Color.BLACK);
         drawGrid(g);
@@ -97,11 +97,11 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
                 cell[row][col] = new Cell(row, col);
             }
         }
-        cell[36][22].setAlive(true); // sample use of cell mutator method
-        cell[36][23].setAlive(true); // sample use of cell mutator method
-        cell[36][24].setAlive(true); // sample use of cell mutator method
-        cell[35][24].setAlive(true); // sample use of cell mutator method
-        cell[34][23].setAlive(true); // sample use of cell mutator method
+        //cell[36][22].setAlive(true); // sample use of cell mutator method
+        //cell[36][23].setAlive(true); // sample use of cell mutator method
+        //cell[36][24].setAlive(true); // sample use of cell mutator method
+        //cell[35][24].setAlive(true); // sample use of cell mutator method
+        //cell[34][23].setAlive(true); // sample use of cell mutator method
 
 
 
@@ -166,6 +166,11 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
         }
         repaint();
     }
+    int x = 0;
+    int y = 0;
+    int xArypos = 0;
+    int yArypos = 0;
+
     public void mouseClicked(MouseEvent arg0) {
         cell[0][0].setAlive(true);
         cell[6][2].setAlive(true); // sample use of cell mutator method
@@ -203,7 +208,15 @@ public class Display extends JComponent implements MouseListener, MouseMotionLis
 
 
     public void mouseMoved(MouseEvent arg0) {
+        x = arg0.getX();
+        y = arg0.getY();
+        xArypos = ((x)/20) - (x % 20);
+        yArypos = ((y)/20) - (y % 20);
+        //System.out.println("mouse x pos =" + x);
+        //System.out.println("mouse y pos =" + y);
 
+        System.out.println("mouse x array pos =" + xArypos);
+        System.out.println("mouse y array pos =" + yArypos);
     }
     public void randomCells() {
         for (int row = 0; row < ROWS; row++) {
